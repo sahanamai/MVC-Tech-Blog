@@ -1,5 +1,7 @@
 const router = require('express').Router();
 const{User,Post,Comment} = require("../models/");
+//const withAuth = require('../utils/auth');
+
 router.get('/', async (req, res) => {//homepage route
   console.log("jjj")
     try {
@@ -25,7 +27,7 @@ router.get('/', async (req, res) => {//homepage route
   //login route
   router.get('/login', (req, res) => {
     if (req.session.logged_in) {
-      res.redirect('/');
+      res.redirect('/profile');
       return;
     }
   
@@ -55,6 +57,7 @@ router.get('/post/:id', async (req, res) => {
   }
 });
 
+// Use withAuth middleware to prevent access to route
 
 
 
