@@ -1,0 +1,17 @@
+[
+    {
+        "title": "Hello world!",
+        "content": " My name is sahana, and I am a future web developer!!!!!!!!",
+        "user_id": 1
+    },
+    {
+        "title": "Javascript",
+        "content": "Favourite",
+        "user_id": 2
+    },
+    {
+        "title": "Bootstrap",
+        "content": " My favourite.",
+        "user_id": 3
+    }
+]
