@@ -1,15 +1,8 @@
- <div class="row is-centered"> <!--post/id route in homeRoute.js->  data of post.json in homepage-->
-       {{#each posts as |post|}}
-       <div class="row mb-4 project">
-  <div class="col-md-5">
-    <h2>
-     <a href="/dashboard/{{post.id}}"><!--if hellow world clicked take user to /dashboard/1-->
-     <div>{{post.title}}</div>
-     <div>{{post.content}}</div></a>
-    </h2>
-    <p>
-    
-    </p>
-       
-        {{/each}}
+{{#each posts as |post|}}
+
+{{> post-info post }}
 </div>
+
+{{else}}
+<h6 class="pb-4 has-text-centered is-italic"> currently no posts</h6>
+{{/each}}

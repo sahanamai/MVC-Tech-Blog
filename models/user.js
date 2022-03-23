@@ -16,7 +16,11 @@ User.init(
       primaryKey: true,
       autoIncrement: true,
     },
-    name: {
+    github: {
+      type: DataTypes.STRING,
+      allowNull: true
+  },
+    username: {
       type: DataTypes.STRING,
       allowNull: false,
     },
